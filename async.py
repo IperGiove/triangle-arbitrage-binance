@@ -29,7 +29,7 @@ def arbitrage_opportunity(data, pair_id):
 
 def arbitrage(date, data):
     date = datetime.datetime.utcfromtimestamp(date/1000).strftime('%Y-%m-%d %H:%M:%S')
-    gain, pair_symbol = arbitrage_opportunity(data, 1)
+    gain, pair_symbol = arbitrage_opportunity(data, 0)
     arbitrage_execute(gain, pair_symbol)
     print(f'{date}, pair->{pair_symbol}, gain={gain}')
     
