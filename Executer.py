@@ -17,9 +17,3 @@ class Executer:
     def balance(self, symbol):
         return float(self.client.get_asset_balance(symbol)['free'])
 
-
-if __name__ == '__main__':
-    executer = Executer()
-    #print(executer.client.get_account())
-    #executer.order('BTCUSDT', 'SELL', 0.1)
-    #print(executer.balance('BTC'))
