@@ -5,7 +5,6 @@ import threading
 import websocket
 import datetime
 import json
-import time
 
 fee = 0.00
 pair = Pair()
